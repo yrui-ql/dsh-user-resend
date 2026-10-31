@@ -1,0 +1,63 @@
+{
+  "name": "dsh-user-resend",
+  "version": "0.2.1",
+  "private": true,
+  "description": "Adds a resend action to user messages in DSH Chat, so an interrupted or restarted turn can be re-sent with its text, @ file mentions, and image attachments without retyping the prompt.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-renderer",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-chat"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node test/manifest.test.mjs"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "resend",
+    "chat"
+  ],
+  "author": "yrui-ql",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yrui-ql/dsh-user-resend.git"
+  },
+  "homepage": "https://github.com/yrui-ql/dsh-user-resend#readme",
+  "bugs": {
+    "url": "https://github.com/yrui-ql/dsh-user-resend/issues"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

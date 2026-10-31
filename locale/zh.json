@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "消息重新发送",
+    "description": "在 DSH 对话的用户消息旁添加“重新发送”按钮：DSH 重启或中断后，一键把该消息（含图片附件与 @ 文件提及）重新发给 AI，继续对话，无需重新输入。"
+  },
+  "resend": "重新发送",
+  "resendSending": "正在重新发送…",
+  "resendSent": "已重新发送",
+  "resendFailed": "重新发送失败",
+  "copy": "复制",
+  "copied": "已复制",
+  "clock.md": "{m}月{d}日",
+  "clock.ymd": "{y}年{m}月{d}日"
+}

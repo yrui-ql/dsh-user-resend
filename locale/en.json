@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Message Resend",
+    "description": "Adds a Resend action to user messages in DSH Chat so a prompt interrupted by a restart can be sent again with its images and @ file mentions, without retyping it."
+  },
+  "resend": "Resend message",
+  "resendSending": "Resending…",
+  "resendSent": "Message resent",
+  "resendFailed": "Resend failed",
+  "copy": "Copy",
+  "copied": "Copied",
+  "clock.md": "{m}/{d}",
+  "clock.ymd": "{y}-{m}-{d}"
+}

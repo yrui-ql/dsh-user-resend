@@ -1,0 +1,5 @@
+# dsh-user-resend bundle patch: mounts the plugin into a profile layer stack.
+# The plugin has no Host configuration; the Client half owns the action.
+- insert:
+    - id: dsh-user-resend
+      name: 'dsh-user-resend'
